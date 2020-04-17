@@ -3,7 +3,7 @@ import json
 import boto3
 
 
-def get_config_dict(file_path, bucket_name=None):
+def get_config_dict(file_path: str, bucket_name=None) -> dict:
     """Reads file, loads JSON from it and return
 
     :param file_path: This can be a local file path or name of key stored in S3 bucket
